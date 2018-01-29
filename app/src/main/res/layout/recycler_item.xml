@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/text_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:text="Text A"/>
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/text_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text B"
+        app:layout_constraintTop_toBottomOf="@id/text_a"/>
+
+    <TextView
+        android:id="@+id/text_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Text C"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintLeft_toRightOf="@id/text_a"
+        app:layout_constraintTop_toTopOf="@id/text_a"
+        app:layout_constraintBottom_toBottomOf="@id/text_b"/>
+
+</android.support.constraint.ConstraintLayout>
